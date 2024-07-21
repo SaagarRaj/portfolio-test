@@ -15,6 +15,7 @@ const containerVariants = {
 const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    exit: { opacity: 0 }
 };
 
 const SplashScreen: React.FC<Props> = ({ quote, author }) => {

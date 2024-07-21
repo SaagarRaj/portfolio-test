@@ -1,7 +1,10 @@
 'use client'
+import { MainPage } from "@/components/MainPage";
+import { Navbar } from "@/components/Navbar";
 import SplashScreen from "@/components/SplashScreen";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -13,6 +16,7 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
+
   return (
     <>
       <AnimatePresence>
@@ -20,9 +24,11 @@ export default function Home() {
           <SplashScreen quote="Every happiness is a hostage to fortune." author="Arthur Helps" />
         )}
       </AnimatePresence>
-      <div>
-        <h1>Home page</h1>
-      </div>
+
+      <Navbar />
+      <MainPage />
+
+
     </>
   );
 }

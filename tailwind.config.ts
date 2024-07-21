@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "custom-blue": "#14213D",
+        "custom-yellow": "#FCA311",
+        "cutom-offWhite": "#E5E5E5",
+      },
+      fontFamily: { roboto: ["Roboto", "sans-serif"] },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
