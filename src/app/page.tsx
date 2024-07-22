@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <AnimatePresence>
         {showSplash && (
-          <SplashScreen quote="Every happiness is a hostage to fortune." author="Arthur Helps" />
+          <SplashScreen quote="Splash Screen" author="SRT" />
         )}
       </AnimatePresence>
 

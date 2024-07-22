@@ -1,3 +1,4 @@
+import { Poppins, Roboto } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -11,9 +12,13 @@ const config: Config = {
       colors: {
         "custom-blue": "#14213D",
         "custom-yellow": "#FCA311",
-        "cutom-offWhite": "#E5E5E5",
+        "custom-offWhite": "#E5E5E5",
       },
-      fontFamily: { roboto: ["Roboto", "sans-serif"] },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+        robotoMono: ["Roboto Mono", "monospace"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

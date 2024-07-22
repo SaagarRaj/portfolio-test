@@ -21,14 +21,14 @@ const itemVariants = {
 const SplashScreen: React.FC<Props> = ({ quote, author }) => {
     return (
         <motion.div
-            className="fixed flex h-[100vh] w-[100%] bg-black text-white z-55 justify-center items-center overflow-hidden"
+            className="fixed z-40 flex h-[100vh] w-[100%] bg-black text-white z-55 justify-center items-center overflow-hidden"
             initial="hidden"
             animate="visible"
             exit="exit"
             variants={containerVariants}
         >
             <motion.div
-                className="flex flex-col gap-4  font-semibold font-serif text-center"
+                className="flex flex-col gap-4  font-semibold font-Poppins text-center"
                 variants={containerVariants}
             >
                 <motion.p className="text-3xl" variants={itemVariants}>{quote}</motion.p>

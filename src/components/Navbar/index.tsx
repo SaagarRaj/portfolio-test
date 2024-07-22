@@ -3,13 +3,14 @@
 type Props = {}
 
 export const Navbar = (props: Props) => {
-    const NavItemsStyleClass = " p-4 border-b-2 border-transparent transition-all duration-300 hover:border-custom-yellow cursor-pointer"
+    const NavItemsStyleClass = " p-2 border-b-2 border-transparent transition-all duration-300 hover:border-custom-yellow cursor-pointer"
     return (
-        <nav>
-            <div className="flex items-center justify-center  gap-[4rem] font-roboto text-lg font-thin">
-                <p className={NavItemsStyleClass}> About </p>
-                <p className={NavItemsStyleClass}> Experience </p>
-                <p className={NavItemsStyleClass}> Project </p>
+        <nav className="fixed top-0 left-0 right-0  bg-white">
+            <div className="flex items-center justify-center  gap-[3rem]  text-[0.9rem] font-light text-gray-400 shadow">
+                <p className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">01. </span>About </p>
+                <p className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">02. </span>Experience </p>
+                <p className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">03. </span>Project </p>
+                <p className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">04. </span> Contact </p>
                 <p className={NavItemsStyleClass}> Resume </p>
             </div>
         </nav>
