@@ -24,7 +24,6 @@ export default function Home() {
           <SplashScreen quote="Splash Screen" author="SRT" />
         )}
       </AnimatePresence>
-
       <Navbar />
       <MainPage />
 
