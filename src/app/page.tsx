@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <AnimatePresence>
         {showSplash && (
-          <SplashScreen quote="Splash Screen" author="SRT" />
+          <SplashScreen quote="Why do Git developers seem so calm ? " author="Becuse they have their commits under control" />
         )}
       </AnimatePresence>
       <Navbar />

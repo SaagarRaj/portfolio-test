@@ -1,6 +1,8 @@
-import Image from "next/image";
-import SampleImage from "./19362653.jpg";
+import Image, { StaticImageData } from "next/image";
+import SampleImage from "./icons/19362653.jpg"
 import icons from "./icon";
+import { ProjectCard } from "@/shared Components/ProjectCard";
+
 
 type Props = {};
 
@@ -28,8 +30,8 @@ const SectionTitle = ({ number, title }: { number: string; title: string }) => (
     </div>
 );
 
-const SkillsGrid = ({ icons }: { icons: string[] }) => (
-    <div className="w-full grid grid-cols-4 gap-1 p-2 border-t">
+const SkillsGrid = ({ icons }: { icons: StaticImageData[] }) => (
+    <div className="w-full grid grid-cols-4 gap-1 p-2 border-t border-gray-400">
         {icons.map((src, index) => (
             <div key={index} className="flex items-center justify-center p-4 rounded">
                 <Image src={src} alt={`Icon ${index + 1}`} width={50} height={50} className="object-contain" />
@@ -39,7 +41,7 @@ const SkillsGrid = ({ icons }: { icons: string[] }) => (
 );
 
 const ExperienceCard = () => (
-    <div className="w-[90%] rounded-lg bg-custom-blue flex flex-col text-white p-[1.25rem] shadow-xl mx-auto">
+    <div className="w-[90%] rounded-lg bg-custom-blue flex flex-col text-white p-[1.25rem] shadow-neon-inverted mx-auto">
         <div className="p-2 mt-2">
             <p className="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -65,11 +67,16 @@ export const MainPage = (props: Props) => {
                         {/* Left section */}
                         <div className="flex flex-col items-start">
                             <p>Hi, I am</p>
-                            <p className="text-[4rem]">Saagar Raj Tiwari</p>
+                            <p className="text-[4rem] p-2 pt-0">Saagar Raj Tiwari</p>
                             <p>A Full-stack Developer</p>
                             <button className="border border-black rounded-md w-[20%] p-2 mt-6 hover:bg-black hover:text-custom-yellow">
                                 Resume
                             </button>
+                            <div className="flex items-center justify-center mt-2 gap-4">
+                                <Image className="hover:cursor-pointer" src={icons.githubIcon} alt={`Github Icon`} width={25} height={25} onClick={() => window.location.href = "https://github.com/SaagarRaj"} />
+                                <Image className="hover:cursor-pointer" src={icons.linkedInIcon} alt={`linkedIn Icon`} width={25} height={25} onClick={() => window.location.href = " https://www.linkedin.com/in/srt99/"} />
+                                <a href="mailto:saagar991@gmail.com"><Image className="hover:cursor-pointer" src={icons.mailIcon} alt={`Mail Icon`} width={25} height={25} /></a>
+                            </div>
                         </div>
                         {/* Right section */}
                         <div>
@@ -81,7 +88,7 @@ export const MainPage = (props: Props) => {
 
             {/* About Me Section */}
             <section className="flex items-center justify-center bg-custom-blue text-white">
-                <div className="flex flex-col items-start justify-start h-[50vh] w-[80%] mx-auto p-6">
+                <div className="flex flex-col items-start justify-start w-[80%] mx-auto p-6">
                     <SectionTitle number="01." title="About Me" />
                     <div className="flex justify-between w-full gap-2">
                         {/* Left section */}
@@ -97,7 +104,7 @@ export const MainPage = (props: Props) => {
                         {/* Right section */}
                         <div className="flex flex-col w-[40%]">
                             <div className="flex items-center justify-center mb-2">
-                                <h2 className="font-light text-xl">Skills</h2>
+                                <h2 className="font-light text-xl text-gray-400">Skills</h2>
                             </div>
                             <SkillsGrid icons={iconList} />
                         </div>
@@ -107,18 +114,31 @@ export const MainPage = (props: Props) => {
 
             {/* Experience Section */}
             <section className="mt-2 bg-custom-offWhite">
-                <div className="w-[80%] h-[70vh] mx-auto flex flex-col items-start p-6">
+                <div className="w-[80%]  mx-auto flex flex-col items-start p-6">
                     <SectionTitle number="02." title="Experience" />
                     <div className="flex items-start justify-between h-full w-full">
                         {/* Left section: Company buttons */}
-                        <div className="w-[20%] items-start flex flex-col p-4">
-                            <button className="w-[70%] p-4 focus:border-l-2 focus:border-l-custom-blue focus:bg-white">Company 1</button>
-                            <button className="w-[70%] p-4 focus:border-l-2 focus:border-l-custom-blue focus:bg-white">Company 2</button>
+                        <div className="w-[30%] items-start flex flex-col p-4 shadow-md">
+                            <button className="w-full p-4 focus:border-l-2 focus:border-l-custom-blue focus:bg-white ">Cognizant Technological Solutions</button>
+                            <button className="w-full p-4 focus:border-l-2 focus:border-l-custom-blue focus:bg-white">National Chin-yi University of Technology, Taiwan</button>
                         </div>
                         {/* Right section: Experience details */}
                         <div className="w-[60%] h-full p-4 ">
                             <ExperienceCard />
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="mt-2 bg-custom-offWhite">
+                <div className="w-[80%] mx-auto flex flex-col items-start p-6">
+                    <SectionTitle number="03." title="Projects" />
+                    <div className="grid grid-flow-row grid-cols-2 gap-6 w-full">
+                        <ProjectCard />
+                        <ProjectCard />
+                        <ProjectCard />
+                        <ProjectCard />
+
                     </div>
                 </div>
             </section>

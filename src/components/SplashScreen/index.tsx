@@ -8,7 +8,7 @@ type Props = {
 
 const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0, staggerChildren: 0.5 } },
+    visible: { opacity: 1, transition: { duration: 0, staggerChildren: 1 } },
     exit: { opacity: 1, y: -1000, transition: { duration: 0.5 } },
 };
 
@@ -32,7 +32,7 @@ const SplashScreen: React.FC<Props> = ({ quote, author }) => {
                 variants={containerVariants}
             >
                 <motion.p className="text-3xl" variants={itemVariants}>{quote}</motion.p>
-                <motion.p className="font-thin text-sm" variants={itemVariants}>- {author}</motion.p>
+                <motion.p className="font-thin text-xl" variants={itemVariants}> {author}</motion.p>
             </motion.div>
         </motion.div>
     );

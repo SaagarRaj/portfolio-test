@@ -11,7 +11,10 @@ import MongoDBIcon from "./icons/icons8-mongo-db-color/icons8-mongo-db-96.png";
 import pythonIcon from "./icons/icons8-python-color/icons8-python-96.png";
 import firebaseIcon from "./icons/icons8-google-firebase-console-color/icons8-google-firebase-console-96.png";
 import sqlIcon from "./icons/icons8-sql-50.png";
-
+import linkedInIcon from "./icons/linkedin-brands-solid.svg";
+import githubIcon from "./icons/github-brands-solid.svg";
+import mailIcon from "./icons/envelope-solid.svg";
+import React2 from "./icons/React-2.png";
 const icons = {
   android,
   htmlIcon,
@@ -25,6 +28,10 @@ const icons = {
   pythonIcon,
   firebaseIcon,
   sqlIcon,
+  linkedInIcon,
+  githubIcon,
+  mailIcon,
+  React2,
 };
 
 export type IconType = keyof typeof icons;
