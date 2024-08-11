@@ -10,13 +10,21 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
+    "framer-motion": "^11.3.24",
     "next": "14.2.5",
     "react": "^18",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-anchor-link-smooth-scroll": "^1.0.5",
     "@types/react-dom": "^18",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5",

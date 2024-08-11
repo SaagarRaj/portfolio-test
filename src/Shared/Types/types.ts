@@ -1,0 +1,18 @@
+import { StaticImageData } from 'next/image';
+
+export type ExperienceObjectType = {
+  name: string;
+  title: string;
+  Date: string;
+  description: string;
+};
+
+export type ExperienceCardType = {
+  title: string;
+  description: string;
+  date: string;
+};
+
+export type IconMapping = {
+  [key: string]: StaticImageData;
+};
