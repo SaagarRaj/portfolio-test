@@ -50,20 +50,20 @@ export const Navbar = (props: Props) => {
                     }} >
 
                     <MenuItem className="text-gray-400 hover:text-black" onClick={handleClose}>
-                        <AnchorLink href="#aboutMe" offset={20} className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">01.</span>About </AnchorLink>
+                        <AnchorLink href="#aboutMe" offset={30} className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">01.</span>About </AnchorLink>
                     </MenuItem>
                     <MenuItem className="text-gray-400 hover:text-black" onClick={handleClose}>
-                        <AnchorLink href="#experience" offset={20} className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">02.</span>Experience </AnchorLink>
+                        <AnchorLink href="#experience" offset={30} className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">02.</span>Experience </AnchorLink>
                     </MenuItem>
                     <MenuItem className="text-gray-400 hover:text-black" onClick={handleClose}>
-                        <AnchorLink href="#project" offset={20} className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">03.</span>Project </AnchorLink>
+                        <AnchorLink href="#project" offset={30} className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">03.</span>Project </AnchorLink>
                     </MenuItem>
                     <MenuItem className="text-gray-400 hover:text-black" onClick={handleClose}>
-                        <AnchorLink href="#contact" offset={20} className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">04.</span> Contact </AnchorLink>
+                        <AnchorLink href="#contact" offset={30} className={NavItemsStyleClass}> <span className="text-custom-yellow font-robotoMono ">04.</span> Contact </AnchorLink>
                     </MenuItem>
                 </Menu>
 
             </div>
-        </nav>
+        </nav >
     )
 }
