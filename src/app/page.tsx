@@ -2,12 +2,29 @@
 import { Navbar } from "@/Scenes/Navbar";
 import SplashScreen from "@/Scenes/SplashScreen";
 import { AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 import icons from "@/Assets/icons";
 import DevImage from "@/Assets/icons/icons/19362653.jpg"
+import About from "@/Scenes/About";
 
 export default function Home() {
+
+  const iconList: StaticImageData[] = [
+    icons.htmlIcon,
+    icons.cssIcon,
+    icons.javascriptIcon,
+    icons.typescriptIcon,
+    icons.pythonIcon,
+    icons.reactIcon,
+    icons.nodeIcon,
+    icons.tailwindIcon,
+    icons.MongoDBIcon,
+    icons.firebaseIcon,
+    icons.sqlIcon,
+    icons.androidIcon,
+  ]
+
   const [showSplash, setShowSplash] = useState<boolean>(true);
 
   useEffect(() => {
@@ -54,7 +71,8 @@ export default function Home() {
         </div>
       </section>
 
-
+      {/* About Section */}
+      <About icons={iconList} />
     </>
   );
 }

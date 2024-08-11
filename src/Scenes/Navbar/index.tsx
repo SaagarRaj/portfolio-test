@@ -36,7 +36,7 @@ export const Navbar = (props: Props) => {
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}>
 
-                    {open ? <MenuOpen className="text-3xl text-black" /> : <MenuIcon className="text-3xl text-black" />}
+                    {open ? <MenuOpen className="text-3xl  text-black" /> : <MenuIcon className="text-3xl text-gray-400 hover:text-black" />}
 
                 </Button>
 
