@@ -10,6 +10,7 @@ import About from "@/Scenes/About";
 import { ExperienceObjectType, ProjectObjectType } from "@/Shared/Types/types";
 import Experience from "@/Scenes/Experience";
 import Project from "@/Scenes/Projects";
+import Contact from "@/Scenes/Contact ";
 
 
 export default function Home() {
@@ -127,6 +128,9 @@ export default function Home() {
 
       {/* Project */}
       <Project content={ProjectObject} />
+
+      {/* Contact */}
+      <Contact />
     </>
   );
 }
