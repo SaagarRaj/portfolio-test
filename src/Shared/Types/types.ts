@@ -16,3 +16,10 @@ export type ExperienceCardType = {
 export type IconMapping = {
   [key: string]: StaticImageData;
 };
+
+export type ProjectObjectType = {
+  title: string;
+  description: string;
+  techUsed: string[];
+  projectLink: string;
+};

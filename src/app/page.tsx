@@ -7,11 +7,21 @@ import { useEffect, useState } from "react";
 import icons from "@/Assets/icons";
 import DevImage from "@/Assets/icons/icons/19362653.jpg"
 import About from "@/Scenes/About";
-import { ExperienceObjectType } from "@/Shared/Types/types";
+import { ExperienceObjectType, ProjectObjectType } from "@/Shared/Types/types";
 import Experience from "@/Scenes/Experience";
+import Project from "@/Scenes/Projects";
+
+
 export default function Home() {
 
   const ExperienceObject: ExperienceObjectType[] = [
+    {
+      name: "Teaching Assistant",
+      title: "Teaching assistant",
+      Date: "Aug,2024 - present",
+      description: `In my journey, I've had the opportunity to delve into diverse projects, showcasing my passion for innovation and problem-solving. From developing a weather broadcasting system that seamlessly integrates hardware and software components to constructing IoT applications using the Lego EV3 development kit, each endeavour has been a learning experience. I've leveraged tools like Arduino Uno and DTH11 sensor modules to capture weather data with precision and efficiency, achieving a remarkable accuracy rate. Moreover, my foray into Android app development has equipped me with a fundamental understanding of the Android lifecycle, as evidenced by the creation of a calculator app using JAVA, XML, and MVVM architecture. Notably, my achievements extend beyond individual projects, as evidenced by my First Prize win in the Lego Robot Competition at TEEP@AsiaPlus. There, I engineered a robot capable of navigating obstacles and following a designated path with remarkable speed and accuracy, a testament to my dedication and expertise in the field.`,
+    },
+
     {
       name: 'Cognizant Technological Solutions',
       title: "Programmer Analyst Trainee",
@@ -23,13 +33,28 @@ export default function Home() {
       title: "Student Intern",
       Date: "Aug,2018 - Jul,2018",
       description: `In my journey, I've had the opportunity to delve into diverse projects, showcasing my passion for innovation and problem-solving. From developing a weather broadcasting system that seamlessly integrates hardware and software components to constructing IoT applications using the Lego EV3 development kit, each endeavour has been a learning experience. I've leveraged tools like Arduino Uno and DTH11 sensor modules to capture weather data with precision and efficiency, achieving a remarkable accuracy rate. Moreover, my foray into Android app development has equipped me with a fundamental understanding of the Android lifecycle, as evidenced by the creation of a calculator app using JAVA, XML, and MVVM architecture. Notably, my achievements extend beyond individual projects, as evidenced by my First Prize win in the Lego Robot Competition at TEEP@AsiaPlus. There, I engineered a robot capable of navigating obstacles and following a designated path with remarkable speed and accuracy, a testament to my dedication and expertise in the field.`,
-    },
+    }
+  ];
 
+  const ProjectObject: ProjectObjectType[] = [
     {
-      name: "Teaching Assistant",
-      title: "Teaching assistant",
-      Date: "Aug,2024 - present",
-      description: `In my journey, I've had the opportunity to delve into diverse projects, showcasing my passion for innovation and problem-solving. From developing a weather broadcasting system that seamlessly integrates hardware and software components to constructing IoT applications using the Lego EV3 development kit, each endeavour has been a learning experience. I've leveraged tools like Arduino Uno and DTH11 sensor modules to capture weather data with precision and efficiency, achieving a remarkable accuracy rate. Moreover, my foray into Android app development has equipped me with a fundamental understanding of the Android lifecycle, as evidenced by the creation of a calculator app using JAVA, XML, and MVVM architecture. Notably, my achievements extend beyond individual projects, as evidenced by my First Prize win in the Lego Robot Competition at TEEP@AsiaPlus. There, I engineered a robot capable of navigating obstacles and following a designated path with remarkable speed and accuracy, a testament to my dedication and expertise in the field.`,
+      title: "Project Title 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      techUsed: ["html", "typescript", "firebase", "tailwind"],
+      projectLink: "link"
+    },
+    {
+      title: "Project Title 2",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      techUsed: ["react", "javascript", "mongodb", "tailwind"],
+      projectLink: "link"
+    },
+    {
+
+      title: "Project Title 3",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      techUsed: ["android", "firebase"],
+      projectLink: "https://loremipsum.io/generator"
     }
   ];
 
@@ -99,6 +124,9 @@ export default function Home() {
 
       {/* Experience */}
       <Experience ExpObj={ExperienceObject} />
+
+      {/* Project */}
+      <Project content={ProjectObject} />
     </>
   );
 }

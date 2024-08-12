@@ -15,11 +15,11 @@ const Experience = ({ ExpObj }: Props) => {
     };
     return (
         <section id="experience" className="mt-2 bg-custom-offWhite">
-            <div className="w-full max-w-screen-lg mx-auto flex flex-col items-start p-6">
+            <div className="w-full max-w-screen-lg mx-auto flex flex-col items-start p-6 min-h-[70vh]">
                 <SectionTitle number="02." title="Experience" />
                 <div className="flex flex-col md:flex-row w-full gap-4">
                     {/* Left section: Company buttons */}
-                    <div className="md:w-1/3 w-full flex flex-col p-4 shadow-md">
+                    <div className="md:w-1/3 w-full flex flex-col p-4 shadow-md h-full">
                         {ExpObj.map((button, index) => (
                             <button
                                 key={index}

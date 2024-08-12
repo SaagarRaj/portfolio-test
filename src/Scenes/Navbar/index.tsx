@@ -29,7 +29,7 @@ export const Navbar = (props: Props) => {
                 <p className={`${NavItemsStyleClass}`}> Resume </p>
             </div>
 
-            <div className="flex md:hidden items-center justify-end p-2 w-[95%]">
+            <div className="flex md:hidden items-center justify-end  w-[95%]">
                 <Button className="hover:bg-custom-offWhite" id="basic-button"
                     aria-controls={open ? 'basic-menu' : undefined}
                     aria-haspopup="true"

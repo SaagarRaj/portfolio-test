@@ -30,6 +30,10 @@ const config: Config = {
         'black-shadow':
           '0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.3)',
       },
+      backgroundImage: {
+        'custom-blue-gradient':
+          'radial-gradient(circle, rgba(0,21,55,1) 0%, rgba(51,77,205,1) 100%)',
+      },
     },
   },
   plugins: [],
