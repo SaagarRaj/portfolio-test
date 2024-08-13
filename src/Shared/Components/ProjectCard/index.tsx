@@ -33,20 +33,22 @@ type Props = {
 
 const ProjectCard = ({ title, description, techUsed, projectLink }: Props) => {
     return (
-        <div className="flex flex-col items-start justify-start m-4 border border-gray-400 rounded-lg p-4">
-            <div className="flex items-center justify-center w-full">
-                {/* Image */}
-                {/* <Image src={image} alt="banner" height={300} width={550} className="rounded-md" /> */}
-                {/* <div className='h-[100px] w-full rounded-md p-4 flex items-center justify-center bg-custom-blue-gradient text-white'>
+        <div className="flex flex-col items-start justify-between m-4 border border-gray-400 rounded-lg p-4">
+            <div>
+                <div className="flex items-center justify-center w-full">
+                    {/* Image */}
+                    {/* <Image src={image} alt="banner" height={300} width={550} className="rounded-md" /> */}
+                    {/* <div className='h-[100px] w-full rounded-md p-4 flex items-center justify-center bg-custom-blue-gradient text-white'>
                     <h1 className='text-[2rem] font-robotoMono '> Sorting Visualizer</h1>
                 </div> */}
-            </div>
+                </div>
 
-            {/* Project Title and Description */}
-            <div className="flex flex-col p-4  items-center w-full ">
-                <h1 className="font-semibold mb-2 ">{title}</h1>
-                <hr className='w-full border-gray-500' />
-                <p className="font-light text-justify mt-4"> {description}</p>
+                {/* Project Title and Description */}
+                <div className="flex flex-col p-4  items-center w-full ">
+                    <h1 className="font-semibold mb-2 ">{title}</h1>
+                    <hr className='w-full border-gray-500' />
+                    <p className="font-light text-justify mt-4"> {description}</p>
+                </div>
             </div>
 
             {/* Technology Icons and Project Link */}
@@ -63,8 +65,9 @@ const ProjectCard = ({ title, description, techUsed, projectLink }: Props) => {
 
                 {/* Project Link */}
                 <div className="flex items-center gap-2">
-                    <span className="font-extralight">Project Link</span>
-                    <a href={projectLink} target="_blank" rel="noopener noreferrer">
+
+                    <a href={projectLink} className="flex gap-1" target="_blank" rel="noopener noreferrer">
+                        <span className="font-extralight">Project Link</span>
                         <Image className="cursor-pointer" src={icons.githubIcon} height={25} width={25} alt="GitHub icon" />
                     </a>
                 </div>

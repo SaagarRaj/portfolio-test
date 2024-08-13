@@ -39,24 +39,47 @@ export default function Home() {
 
   const ProjectObject: ProjectObjectType[] = [
     {
-      title: "Project Title 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      techUsed: ["html", "typescript", "firebase", "tailwind"],
-      projectLink: "link"
+      title: "Blog Market",
+      description: "Developed a Blog app featuring a sleek user interface using React.js and Tailwind CSS. The frontend integrates seamlessly with a Node.js backend, utilizing Axios for API fetching and Multer for image storage. Implemented JWT for user authentication and session management. MongoDB Atlas is used for CRUD operations, including managing user credentials, blog posts, and comments. Enhanced security with Bcrypt for password encryption.",
+      techUsed: ["react", "typescript", "mongodb", "tailwind"],
+      projectLink: "https://github.com/SaagarRaj/React-BlogApp"
     },
     {
-      title: "Project Title 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      techUsed: ["react", "javascript", "mongodb", "tailwind"],
-      projectLink: "link"
+      title: "Weather App",
+      description: "Created a modern and responsive frontend using Next.js and React.js, optimized for various screen sizes. Utilized the Weather API to fetch real-time data including temperature, wind speed, humidity, and air pressure, with reliability ranging from 90% to 95%. Enhanced code maintainability and robustness through TypeScript.",
+      techUsed: ["react", "typescript", "tailwind"],
+      projectLink: "https://github.com/SaagarRaj/Nextjs-WeatherApp"
     },
     {
-
-      title: "Project Title 3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      techUsed: ["android", "firebase"],
-      projectLink: "https://loremipsum.io/generator"
-    }
+      title: "Evo Gym",
+      description: `Developed a responsive landing page for a gym using React.js and TypeScript. Integrated engaging animations and interactive elements to boost user experience and visitor engagement. Utilized the react-hook-form library for efficient form handling and validation in the "Contact Us" section, optimizing user input processing. Applied best practices in component-based architecture, state management, and responsive design to ensure a smooth and consistent user experience across devices and screen sizes.`,
+      techUsed: ["react", "javascript", "tailwind"],
+      projectLink: "https://github.com/SaagarRaj/ gym-app"
+    },
+    {
+      title: "Tic-Tac-Toe",
+      description: `Enhanced the Tic Tac Toe Web App with React.js and integrated Confetti.js to provide immersive animations, particularly celebrating player victories. This integration boosts user engagement and adds a fun, interactive element to the game.`,
+      techUsed: ["react", "javascript", "tailwind"],
+      projectLink: "https://github.com/SaagarRaj/TicTacToe"
+    },
+    {
+      title: "BitTrade",
+      description: `Led the development of BitTrade, a cryptocurrency market insights app, as part of a capstone project. Utilized the CoinMarketCap API to provide real-time market data. Implemented the MVVM (Model-View-View-Model) architecture for scalable design. Integrated Google Firebase for backend database management, user login/registration, transactional data, and user authorization. Optimized data fetching with the OkHttp package for real-time updates and accurate information retrieval.`,
+      techUsed: ["android"],
+      projectLink: "https://github.com/SaagarRaj/BitTrade"
+    },
+    {
+      title: "Sorting Visualizer",
+      description: `Developed a Sorting Visualizer app to showcase various sorting algorithms (bubble, quick, merge, insertion, selection). Implemented the frontend using React and TypeScript, allowing users to visualize and interact with the sorting process. Added functionality for users to adjust the speed of the visualizer for a customized experience.`,
+      techUsed: ["react", "typescript", "tailwind"],
+      projectLink: "https://github.com/SaagarRaj/SortingVisualizer-NEXT"
+    },
+    {
+      title: "Emotion Detection Model",
+      description: `Developed an emotion detection model trained on the CIFAR-100 dataset, achieving an accuracy of 83.97%. This notable performance secured the 3rd position on the Papers with Code CIFAR-100 leaderboard. The model's high accuracy was achieved without using any additional training datasets, demonstrating its effectiveness in emotion classification within the CIFAR-100 framework.`,
+      techUsed: ["python"],
+      projectLink: "https://github.com/SaagarRaj/Emotion-Detection-FER13"
+    },
   ];
 
   const iconList: StaticImageData[] = [
@@ -106,10 +129,10 @@ export default function Home() {
               <button className="border border-black rounded-md p-2 mt-6 hover:bg-black hover:text-custom-yellow">
                 <a href="https://drive.google.com/file/d/1lwC-dU9YoSAVF-ezG7n3qLDp_pjFXYvA/view?usp=drive_link">Resume</a>
               </button>
-              <div className="flex items-center justify-center mt-2 gap-4">
-                <Image className="hover:cursor-pointer" src={icons.githubIcon} alt={`Github Icon`} width={25} height={25} onClick={() => window.location.href = "https://github.com/SaagarRaj"} />
-                <Image className="hover:cursor-pointer" src={icons.linkedInIcon} alt={`LinkedIn Icon`} width={25} height={25} onClick={() => window.location.href = "https://www.linkedin.com/in/srt99/"} />
-                <a href="mailto:saagar991@gmail.com"><Image className="hover:cursor-pointer" src={icons.mailIcon} alt={`Mail Icon`} width={25} height={25} /></a>
+              <div className="flex items-center justify-center mt-4 gap-4">
+                <Image className="hover:cursor-pointer" src={icons.githubIcon} alt={`Github Icon`} width={30} height={30} onClick={() => window.location.href = "https://github.com/SaagarRaj"} />
+                <Image className="hover:cursor-pointer" src={icons.linkedInIcon} alt={`LinkedIn Icon`} width={33} height={33} onClick={() => window.location.href = "https://www.linkedin.com/in/srt99/"} />
+                <a href="mailto:saagar991@gmail.com"><Image className="hover:cursor-pointer" src={icons.mailIcon} alt={`Mail Icon`} width={33} height={35} /></a>
               </div>
             </div>
             {/* Right section */}
