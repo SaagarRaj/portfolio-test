@@ -15,7 +15,14 @@ const iconMapping: IconMapping = {
     python: icons.pythonIcon,
     firebase: icons.firebaseIcon,
     sql: icons.sqlIcon,
+    aws: icons.awsIcon,
+    dynamodb: icons.awsDynamoDbIcon,
+    elasticache: icons.awsElastiCacheIcon,
+    memcached: icons.memcachedIcon,
+    redis: icons.redisIcon,
+    react: icons.reactIcon
 }
+
 
 type Props = {
     title: string,
@@ -26,7 +33,7 @@ type Props = {
 
 const ProjectCard = ({ title, description, techUsed, projectLink }: Props) => {
     return (
-        <div className="flex flex-col items-center justify-center m-4 border border-gray-400 rounded-lg p-4 ">
+        <div className="flex flex-col items-start justify-start m-4 border border-gray-400 rounded-lg p-4">
             <div className="flex items-center justify-center w-full">
                 {/* Image */}
                 {/* <Image src={image} alt="banner" height={300} width={550} className="rounded-md" /> */}
@@ -36,7 +43,7 @@ const ProjectCard = ({ title, description, techUsed, projectLink }: Props) => {
             </div>
 
             {/* Project Title and Description */}
-            <div className="flex flex-col p-4  items-center w-full">
+            <div className="flex flex-col p-4  items-center w-full ">
                 <h1 className="font-semibold mb-2 ">{title}</h1>
                 <hr className='w-full border-gray-500' />
                 <p className="font-light text-justify mt-4"> {description}</p>

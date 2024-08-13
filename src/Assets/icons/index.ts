@@ -14,6 +14,12 @@ import sqlIcon from './icons/icons8-sql-50.png';
 import linkedInIcon from './icons/linkedin-brands-solid.svg';
 import githubIcon from './icons/github-brands-solid.svg';
 import mailIcon from './icons/envelope-solid.svg';
+import awsIcon from './icons/aws.png';
+import awsDynamoDbIcon from './icons/DynamoDB.png';
+import awsElastiCacheIcon from './icons/ElastiCache.png';
+import redisIcon from './icons/redis.png';
+import memcachedIcon from './icons/memcached.png';
+import kafkaIcon from './icons/Managed Streaming for Apache Kafka.png';
 
 const icons = {
   androidIcon,
@@ -31,6 +37,12 @@ const icons = {
   linkedInIcon,
   githubIcon,
   mailIcon,
+  awsDynamoDbIcon,
+  awsElastiCacheIcon,
+  awsIcon,
+  redisIcon,
+  memcachedIcon,
+  kafkaIcon,
 };
 
 export type IconType = keyof typeof icons;

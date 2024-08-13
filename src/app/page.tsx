@@ -17,10 +17,10 @@ export default function Home() {
 
   const ExperienceObject: ExperienceObjectType[] = [
     {
-      name: "Teaching Assistant",
+      name: "California State University, Long Beach",
       title: "Teaching assistant",
       Date: "Aug,2024 - present",
-      description: `In my journey, I've had the opportunity to delve into diverse projects, showcasing my passion for innovation and problem-solving. From developing a weather broadcasting system that seamlessly integrates hardware and software components to constructing IoT applications using the Lego EV3 development kit, each endeavour has been a learning experience. I've leveraged tools like Arduino Uno and DTH11 sensor modules to capture weather data with precision and efficiency, achieving a remarkable accuracy rate. Moreover, my foray into Android app development has equipped me with a fundamental understanding of the Android lifecycle, as evidenced by the creation of a calculator app using JAVA, XML, and MVVM architecture. Notably, my achievements extend beyond individual projects, as evidenced by my First Prize win in the Lego Robot Competition at TEEP@AsiaPlus. There, I engineered a robot capable of navigating obstacles and following a designated path with remarkable speed and accuracy, a testament to my dedication and expertise in the field.`,
+      description: `As a Teaching Assistant for the CECS 274 Data Structures course, my duties include delivering lectures, preparing and organizing lab sessions, holding office hours to assist students, and evaluating their assignments and exams. I am also responsible for designing and grading coursework, proctoring exams, and maintaining accurate student records. I am dedicated to supporting students’ understanding of data structures and enhancing their overall learning experience.`
     },
 
     {
@@ -31,7 +31,7 @@ export default function Home() {
     },
     {
       name: "National Chin-yi University of Technology, Taiwan",
-      title: "Student Intern",
+      title: "Externship",
       Date: "Aug,2018 - Jul,2018",
       description: `In my journey, I've had the opportunity to delve into diverse projects, showcasing my passion for innovation and problem-solving. From developing a weather broadcasting system that seamlessly integrates hardware and software components to constructing IoT applications using the Lego EV3 development kit, each endeavour has been a learning experience. I've leveraged tools like Arduino Uno and DTH11 sensor modules to capture weather data with precision and efficiency, achieving a remarkable accuracy rate. Moreover, my foray into Android app development has equipped me with a fundamental understanding of the Android lifecycle, as evidenced by the creation of a calculator app using JAVA, XML, and MVVM architecture. Notably, my achievements extend beyond individual projects, as evidenced by my First Prize win in the Lego Robot Competition at TEEP@AsiaPlus. There, I engineered a robot capable of navigating obstacles and following a designated path with remarkable speed and accuracy, a testament to my dedication and expertise in the field.`,
     }
@@ -64,14 +64,14 @@ export default function Home() {
     icons.cssIcon,
     icons.javascriptIcon,
     icons.typescriptIcon,
-    icons.pythonIcon,
     icons.reactIcon,
     icons.nodeIcon,
     icons.tailwindIcon,
     icons.MongoDBIcon,
     icons.firebaseIcon,
+    icons.awsIcon,
     icons.sqlIcon,
-    icons.androidIcon,
+    icons.awsDynamoDbIcon,
   ]
 
   const [showSplash, setShowSplash] = useState<boolean>(true);
@@ -104,7 +104,7 @@ export default function Home() {
               <p className=" text-[3rem] md:text-[3.5rem] p-2 pt-0">Saagar Raj Tiwari</p>
               <p>A Full-stack Developer</p>
               <button className="border border-black rounded-md p-2 mt-6 hover:bg-black hover:text-custom-yellow">
-                Resume
+                <a href="https://drive.google.com/file/d/1lwC-dU9YoSAVF-ezG7n3qLDp_pjFXYvA/view?usp=drive_link">Resume</a>
               </button>
               <div className="flex items-center justify-center mt-2 gap-4">
                 <Image className="hover:cursor-pointer" src={icons.githubIcon} alt={`Github Icon`} width={25} height={25} onClick={() => window.location.href = "https://github.com/SaagarRaj"} />
@@ -131,6 +131,15 @@ export default function Home() {
 
       {/* Contact */}
       <Contact />
+
+
+      <section id="footer" className="bg-custom-blue">
+        <div className="flex items-center justify-center ">
+          <p className="mt-10 mb-4 text-gray-400 ">
+            copyright @ 2024
+          </p>
+        </div>
+      </section>
     </>
   );
 }
