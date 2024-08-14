@@ -1,9 +1,6 @@
 'use client'
 import { Navbar } from "@/Scenes/Navbar";
-import SplashScreen from "@/Scenes/SplashScreen";
-import { AnimatePresence } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
-import { useEffect, useState } from "react";
 import icons from "@/Assets/icons";
 import DevImage from "@/Assets/icons/icons/19362653.jpg"
 import About from "@/Scenes/About";
@@ -11,7 +8,6 @@ import { ExperienceObjectType, ProjectObjectType } from "@/Shared/Types/types";
 import Experience from "@/Scenes/Experience";
 import Project from "@/Scenes/Projects";
 import Contact from "@/Scenes/Contact ";
-
 
 export default function Home() {
 
@@ -102,23 +98,10 @@ export default function Home() {
     icons.awsDynamoDbIcon,
   ]
 
-  const [showSplash, setShowSplash] = useState<boolean>(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => { setShowSplash(false) }, 3000);
-    return () => clearTimeout(timer);
-  }, [1])
 
 
   return (
     <>
-      {/* Splash Screen */}
-      <AnimatePresence>
-        {showSplash && (
-          <SplashScreen quote="Why do Git developers seem so calm ? " author="Becuse they have their commits under control" />
-        )}
-      </AnimatePresence>
-
       {/* Navbar */}
       <Navbar />
 
@@ -132,12 +115,29 @@ export default function Home() {
               <p className=" text-[3rem] md:text-[3.5rem] p-2 pt-0">Saagar Raj Tiwari</p>
               <p>A Full-stack Developer</p>
               <button className="border border-black rounded-md p-2 mt-6 hover:bg-black hover:text-custom-yellow">
-                <a href="https://drive.google.com/file/d/1lwC-dU9YoSAVF-ezG7n3qLDp_pjFXYvA/view?usp=drive_link">Resume</a>
+                <a href="https://drive.google.com/file/d/1lwC-dU9YoSAVF-ezG7n3qLDp_pjFXYvA/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a>
               </button>
               <div className="flex items-center justify-center mt-4 gap-4">
-                <Image className="hover:cursor-pointer" src={icons.githubIcon} alt={`Github Icon`} width={30} height={30} onClick={() => window.location.href = "https://github.com/SaagarRaj"} />
-                <Image className="hover:cursor-pointer" src={icons.linkedInIcon} alt={`LinkedIn Icon`} width={33} height={33} onClick={() => window.location.href = "https://www.linkedin.com/in/srt99/"} />
-                <a href="mailto:saagar991@gmail.com"><Image className="hover:cursor-pointer" src={icons.mailIcon} alt={`Mail Icon`} width={33} height={35} /></a>
+                <a href="https://github.com/SaagarRaj" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    className="hover:cursor-pointer"
+                    src={icons.githubIcon}
+                    alt={`Github Icon`}
+                    width={30}
+                    height={30}
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/srt99/" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    className="hover:cursor-pointer"
+                    src={icons.linkedInIcon}
+                    alt={`LinkedIn Icon`}
+                    width={33}
+                    height={33}
+                  />
+                </a>
+
+                <a href="mailto:saagar991@gmail.com" target="_blank" rel="noopener noreferrer"><Image className="hover:cursor-pointer" src={icons.mailIcon} alt={`Mail Icon`} width={33} height={35} /></a>
               </div>
             </div>
             {/* Right section */}

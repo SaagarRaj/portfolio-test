@@ -80,7 +80,7 @@ const ProjectCard = ({ title, description, techUsed, projectLink, liveLink, Demo
                     )}
 
                     {DemoVideo && (
-                        <a href={liveLink} className="flex gap-1" target="_blank" rel="noopener noreferrer">
+                        <a href={DemoVideo} className="flex gap-1" target="_blank" rel="noopener noreferrer">
                             <span className="font-extralight underline underline-offset-2">Demo Video</span>
                         </a>
                     )}
