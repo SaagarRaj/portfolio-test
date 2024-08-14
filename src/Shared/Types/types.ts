@@ -22,4 +22,6 @@ export type ProjectObjectType = {
   description: string;
   techUsed: string[];
   projectLink: string;
+  liveLink?: string;
+  DemoVideo?: string;
 };

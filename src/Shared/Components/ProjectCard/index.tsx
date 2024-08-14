@@ -29,9 +29,11 @@ type Props = {
     description: string,
     techUsed: string[],
     projectLink: string,
+    liveLink?: string,
+    DemoVideo?: string
 }
 
-const ProjectCard = ({ title, description, techUsed, projectLink }: Props) => {
+const ProjectCard = ({ title, description, techUsed, projectLink, liveLink, DemoVideo }: Props) => {
     return (
         <div className="flex flex-col items-start justify-between m-4 border border-gray-400 rounded-lg p-4">
             <div>
@@ -64,12 +66,26 @@ const ProjectCard = ({ title, description, techUsed, projectLink }: Props) => {
                 </div>
 
                 {/* Project Link */}
-                <div className="flex items-center gap-2">
+                <div className="flex flex-col md:items-end items-center gap-2">
 
                     <a href={projectLink} className="flex gap-1" target="_blank" rel="noopener noreferrer">
                         <span className="font-extralight">Project Link</span>
                         <Image className="cursor-pointer" src={icons.githubIcon} height={25} width={25} alt="GitHub icon" />
                     </a>
+
+                    {liveLink && (
+                        <a href={liveLink} className="flex gap-1" target="_blank" rel="noopener noreferrer">
+                            <span className="font-extralight underline underline-offset-2">Live Link</span>
+                        </a>
+                    )}
+
+                    {DemoVideo && (
+                        <a href={liveLink} className="flex gap-1" target="_blank" rel="noopener noreferrer">
+                            <span className="font-extralight underline underline-offset-2">Demo Video</span>
+                        </a>
+                    )}
+
+
                 </div>
             </div>
 

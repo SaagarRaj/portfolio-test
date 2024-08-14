@@ -13,7 +13,7 @@ const Project: React.FC<ExperimentProps> = ({ content }) => {
                 <SectionTitle number="03." title="Projects" />
                 <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-6 w-[90%] mx-auto mt-4">
                     {content.map((project, index) => (
-                        <ProjectCard key={index} title={project.title} description={project.description} techUsed={project.techUsed} projectLink={project.projectLink} />
+                        <ProjectCard key={index} title={project.title} description={project.description} techUsed={project.techUsed} projectLink={project.projectLink} liveLink={project.liveLink} DemoVideo={project.DemoVideo} />
                     ))}
                 </div>
             </div>

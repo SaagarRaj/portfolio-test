@@ -42,25 +42,29 @@ export default function Home() {
       title: "Blog Market",
       description: "Developed a Blog app featuring a sleek user interface using React.js and Tailwind CSS. The frontend integrates seamlessly with a Node.js backend, utilizing Axios for API fetching and Multer for image storage. Implemented JWT for user authentication and session management. MongoDB Atlas is used for CRUD operations, including managing user credentials, blog posts, and comments. Enhanced security with Bcrypt for password encryption.",
       techUsed: ["react", "typescript", "mongodb", "tailwind"],
-      projectLink: "https://github.com/SaagarRaj/React-BlogApp"
+      projectLink: "https://github.com/SaagarRaj/React-BlogApp",
+      DemoVideo: "https://www.youtube.com/watch?v=4Nw3wKFp2cM"
     },
     {
       title: "Weather App",
       description: "Created a modern and responsive frontend using Next.js and React.js, optimized for various screen sizes. Utilized the Weather API to fetch real-time data including temperature, wind speed, humidity, and air pressure, with reliability ranging from 90% to 95%. Enhanced code maintainability and robustness through TypeScript.",
       techUsed: ["react", "typescript", "tailwind"],
-      projectLink: "https://github.com/SaagarRaj/Nextjs-WeatherApp"
+      projectLink: "https://github.com/SaagarRaj/Nextjs-WeatherApp",
+      liveLink: "https://nextjs-weather-app-4s5k.vercel.app/"
     },
     {
       title: "Evo Gym",
       description: `Developed a responsive landing page for a gym using React.js and TypeScript. Integrated engaging animations and interactive elements to boost user experience and visitor engagement. Utilized the react-hook-form library for efficient form handling and validation in the "Contact Us" section, optimizing user input processing. Applied best practices in component-based architecture, state management, and responsive design to ensure a smooth and consistent user experience across devices and screen sizes.`,
       techUsed: ["react", "javascript", "tailwind"],
-      projectLink: "https://github.com/SaagarRaj/ gym-app"
+      projectLink: "https://github.com/SaagarRaj/ gym-app",
+      liveLink: 'https://gym-app-five-beryl.vercel.app/'
     },
     {
       title: "Tic-Tac-Toe",
       description: `Enhanced the Tic Tac Toe Web App with React.js and integrated Confetti.js to provide immersive animations, particularly celebrating player victories. This integration boosts user engagement and adds a fun, interactive element to the game.`,
       techUsed: ["react", "javascript", "tailwind"],
-      projectLink: "https://github.com/SaagarRaj/TicTacToe"
+      projectLink: "https://github.com/SaagarRaj/TicTacToe",
+      liveLink: "https://tic-tac-toe-seven-lemon.vercel.app/"
     },
     {
       title: "BitTrade",
@@ -72,7 +76,8 @@ export default function Home() {
       title: "Sorting Visualizer",
       description: `Developed a Sorting Visualizer app to showcase various sorting algorithms (bubble, quick, merge, insertion, selection). Implemented the frontend using React and TypeScript, allowing users to visualize and interact with the sorting process. Added functionality for users to adjust the speed of the visualizer for a customized experience.`,
       techUsed: ["react", "typescript", "tailwind"],
-      projectLink: "https://github.com/SaagarRaj/SortingVisualizer-NEXT"
+      projectLink: "https://github.com/SaagarRaj/SortingVisualizer-NEXT",
+      liveLink: 'https://sorting-visualizer-next-beta.vercel.app/'
     },
     {
       title: "Emotion Detection Model",
@@ -102,7 +107,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => { setShowSplash(false) }, 3000);
     return () => clearTimeout(timer);
-  }, [])
+  }, [1])
 
 
   return (
