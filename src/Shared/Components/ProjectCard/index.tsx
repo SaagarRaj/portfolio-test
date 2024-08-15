@@ -35,22 +35,15 @@ type Props = {
 
 const ProjectCard = ({ title, description, techUsed, projectLink, liveLink, DemoVideo }: Props) => {
     return (
-        <div className="flex flex-col items-start justify-between m-4 border border-gray-400 rounded-lg p-4">
-            <div>
-                <div className="flex items-center justify-center w-full">
-                    {/* Image */}
-                    {/* <Image src={image} alt="banner" height={300} width={550} className="rounded-md" /> */}
-                    {/* <div className='h-[100px] w-full rounded-md p-4 flex items-center justify-center bg-custom-blue-gradient text-white'>
-                    <h1 className='text-[2rem] font-robotoMono '> Sorting Visualizer</h1>
-                </div> */}
-                </div>
+        <div className="flex flex-col items-start justify-between m-4 border border-gray-400 rounded-lg p-4 bg-white">
 
-                {/* Project Title and Description */}
-                <div className="flex flex-col p-4  items-center w-full ">
-                    <h1 className="font-semibold mb-2 ">{title}</h1>
-                    <hr className='w-full border-gray-500' />
-                    <p className="font-light text-justify mt-4"> {description}</p>
-                </div>
+
+
+            {/* Project Title and Description */}
+            <div className="flex flex-col p-4  items-center w-full ">
+                <h1 className="font-semibold mb-2 ">{title}</h1>
+                <hr className='w-full border-gray-500' />
+                <p className="font-light text-justify mt-4"> {description}</p>
             </div>
 
             {/* Technology Icons and Project Link */}

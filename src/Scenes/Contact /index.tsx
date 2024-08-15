@@ -1,6 +1,7 @@
 import SectionTitle from '@/Shared/Components/SectionTitle'
 import React, { use } from 'react'
 import { useForm } from "react-hook-form"
+require('dotenv').config();
 type Props = {}
 
 const Contact = (props: Props) => {
@@ -27,7 +28,7 @@ const Contact = (props: Props) => {
                     target="_blank"
                     onSubmit={onSubmit}
                     method="POST"
-                    action="https://formsubmit.co/saagartiwari1992@gmail.com"
+                    action={`https://formsubmit.co/${process.env.NEXT_PUBLIC_REACT_HOOK_FORM_EMAIL}`}
                     className="flex flex-col gap-4 mx-auto w-full sm:w-3/4 md:w-1/2 lg:w-2/3"
                 >
                     <input

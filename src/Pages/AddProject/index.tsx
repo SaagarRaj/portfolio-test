@@ -37,9 +37,10 @@ const ProjectObject = {
 const AddProject = (props: Props) => {
     const [title, setTitle] = useState("Add title");
     const [description, setDescription] = useState("Description");
-    const [link, setLink] = useState("");
+    const [link, setLink] = useState<string>("");
     const [skills, setSkills] = useState<string[]>([]);
-    const [inputSkill, setInputSkill] = useState("");
+    const [inputSkill, setInputSkill] = useState<string>("");
+    const [demoVideo, setDemoVideo] = useState<string | undefined>(undefined)
 
     const handleAddSkill = () => {
         if (inputSkill.trim() && !skills.includes(inputSkill.trim())) {
@@ -82,6 +83,12 @@ const AddProject = (props: Props) => {
 
                             onChange={(e) => setLink(e.target.value)}
                         />
+                        <label className={lableStyle}> Demo Video Link </label>
+                        <input
+                            className={inputStyle}
+
+                            onChange={(e) => setDemoVideo(e.target.value)}
+                        />
                         <label className={lableStyle}> Description </label>
                         <textarea
                             rows={8}
@@ -123,6 +130,7 @@ const AddProject = (props: Props) => {
                             description={description}
                             techUsed={skills}
                             projectLink={link}
+                            DemoVideo={demoVideo}
                         />
                     </div>
                 </div>

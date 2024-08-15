@@ -2,7 +2,7 @@
 import { Navbar } from "@/Scenes/Navbar";
 import Image, { StaticImageData } from "next/image";
 import icons from "@/Assets/icons";
-import DevImage from "@/Assets/icons/icons/19362653.jpg"
+import DevImage from "@/Assets/icons/icons/19362653-removebg.png"
 import About from "@/Scenes/About";
 import { ExperienceObjectType, ProjectObjectType } from "@/Shared/Types/types";
 import Experience from "@/Scenes/Experience";

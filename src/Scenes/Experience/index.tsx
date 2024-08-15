@@ -24,7 +24,7 @@ const Experience = ({ ExpObj }: Props) => {
                             <button
                                 key={index}
                                 onClick={() => handleButtonClick(index)}
-                                className="w-full p-4 mb-2 focus:border-b-custom-blue  focus:bg-white hover:bg-white "
+                                className="w-full p-4 m-2 border-2 focus:border-b-black focus:bg-white hover:bg-white rounded-md "
                             >
                                 {button.name}
                             </button>
